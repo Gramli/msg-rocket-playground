@@ -1,0 +1,36 @@
+@baseUrl = http://localhost:3000
+
+### Create a new user
+# @name createUser
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "name": "Jane Doe",
+    "email": "jane@example.com"
+}
+
+### Get User by ID
+# Use the ID from the response of the previous request automatically
+@userId = {{createUser.response.body.id}}
+GET {{baseUrl}}/users/{{userId}}
+
+### Get Non-existent User
+GET {{baseUrl}}/users/non-existent-id
+
+### Create User with Invalid Email (Test Validation)
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "name": "Bad Email",
+    "email": "not-an-email"
+}
+
+### Create User Missing Name (Test Validation)
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "email": "test@example.com"
+}

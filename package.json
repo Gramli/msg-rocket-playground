@@ -1,0 +1,14 @@
+{
+  "name": "msg-rocket-playground",
+  "version": "1.0.0",
+  "description": "Demo repository for msg-rocket CLI",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/userService.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
