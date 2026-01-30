@@ -9,13 +9,6 @@ It is a simple Node.js HTTP server (no frameworks) designed to simulate realisti
 ### Prerequisites
 - Node.js (v14+ recommended)
 
-### Installation
-1. Clone this repository (if you haven't already).
-2. Install dependencies (none required for runtime, but good practice):
-   ```bash
-   npm install
-   ```
-
 ### Running the Server
 Start the HTTP server on port 3000:
 ```bash
