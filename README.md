@@ -1,4 +1,4 @@
-# msg-rocket-playground
+# :video_game: msg-rocket-playground
 
 This repository serves as a **demo playground** for testing and demonstrating the capabilities of the **[msg-rocket](https://github.com/Gramli/msg-rocket)** CLI tool. 
 
