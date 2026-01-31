@@ -1,6 +1,6 @@
 # msg-rocket-playground
 
-This repository serves as a **demo playground** for testing and demonstrating the capabilities of the **msg-rocket** CLI tool. 
+This repository serves as a **demo playground** for testing and demonstrating the capabilities of the **[msg-rocket](https://github.com/Gramli/msg-rocket)** CLI tool. 
 
 It is a simple Node.js HTTP server (no frameworks) designed to simulate realistic development scenarios including features, bug fixes, refactoring, and breaking changes.
 
