@@ -34,3 +34,20 @@ Content-Type: application/json
 {
     "email": "test@example.com"
 }
+
+### Create user for deletion
+# @name createUserForDelete
+POST {{baseUrl}}/users
+Content-Type: application/json
+
+{
+    "name": "User to Delete",
+    "email": "delete@example.com"
+}
+
+### Delete User
+@deleteUserId = {{createUserForDelete.response.body.id}}
+DELETE {{baseUrl}}/users/{{deleteUserId}}
+
+### Delete Non-existent User
+DELETE {{baseUrl}}/users/non-existent-user-id

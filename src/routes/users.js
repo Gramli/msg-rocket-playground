@@ -1,4 +1,4 @@
-import { createUser, getUserById } from '../services/userService.js';
+import { createUser, getUserById, deleteUser } from '../services/userService.js';
 import { validateUserCreate } from '../utils/validation.js';
 
 export async function handleUsersRoutes(req, res) {
@@ -57,6 +57,19 @@ export async function handleUsersRoutes(req, res) {
       
       if (user) {
         sendJSON(200, user);
+      } else {
+        sendJSON(404, { error: 'User not found' });
+      }
+      return;
+    }
+
+    // DELETE /users/:id
+    if (method === 'DELETE' && match) {
+      const id = match[1];
+      const deleted = deleteUser(id);
+      
+      if (deleted) {
+        sendJSON(204, null);
       } else {
         sendJSON(404, { error: 'User not found' });
       }

@@ -21,3 +21,12 @@ export function createUser(payload) {
 export function getUserById(id) {
   return userStore.get(id);
 }
+
+export function deleteUser(id) {
+  const user = userStore.get(id);
+  if (user) {
+    userStore.delete(id);
+    return true;
+  }
+  return false;
+}
