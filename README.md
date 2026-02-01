@@ -23,6 +23,7 @@ npm start
 Endpoints:
 - `POST /users`: Create a user `{"name": "John", "email": "john@example.com"}`
 - `GET /users/:id`: Get a user by ID
+- `DELETE /users/:id`: Delete a user by ID 
 
 ### Manual Testing
 You can use the included `api.http` file to test the endpoints directly in VS Code (requires the "REST Client" extension or similar).
