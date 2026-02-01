@@ -39,7 +39,7 @@ npm test
 This repo is set up to test `msg-rocket` workflows.
 
 1. **Commit Changes**: Use `msg-rocket commit` instead of `git commit` to generate AI-powered commit messages.
-2. **Analyze Changes**: Use `msg-rocket analyze` to get a summary of your staged changes.
+2. **Clean Changes**: Use `msg-rocket clean` to generate a report with cleanup and refactoring suggestions.
 
 ## Demo Scenarios
 
