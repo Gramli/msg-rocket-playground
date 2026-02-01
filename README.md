@@ -9,6 +9,11 @@ It is a simple Node.js HTTP server (no frameworks) designed to simulate realisti
 ### Prerequisites
 - Node.js (v14+ recommended)
 
+### Clone
+```bash
+git clone https://github.com/Gramli/msg-rocket-playground.git
+```
+
 ### Running the Server
 Start the HTTP server on port 3000:
 ```bash
